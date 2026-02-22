@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1.5rem 2rem;
+}
+
+nav .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.hero {
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.products h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.product-card a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #888;
+    font-size: 0.875rem;
+}
