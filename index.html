@@ -134,6 +134,7 @@
         }
 
         .product-card .wordmark {
+            display: flex;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -173,6 +174,57 @@
 
         footer span {
             opacity: 0.6;
+        }
+
+        /* ICON PREVIEW (temporary) */
+        .icon-preview {
+            padding: 3rem 2rem;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .icon-preview h2 {
+            font-family: 'Passion One', sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: 0.01em;
+            color: var(--brown);
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+        }
+
+        .icon-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .icon-cell svg {
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .icon-cell span {
+            font-family: 'Passion One', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            color: var(--faded-inv);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .icon-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
         /* RESPONSIVE */
@@ -253,6 +305,114 @@
             </a>
             <p>Staff scheduling built for UK pubs, restaurants &amp; hotels. Flat pricing, no per-user fees.</p>
             <a href="https://rotakeep.co.uk" target="_blank" rel="noopener" class="cta">Visit RotaKeep</a>
+        </div>
+    </section>
+
+    <!-- ICON PREVIEW (temporary — remove after review) -->
+    <section class="icon-preview">
+        <h2>Product Icon Family</h2>
+        <div class="icon-grid">
+
+            <!-- 1. ROTAKEEP — Calendar with day dots (exact copy from brand pack) -->
+            <div class="icon-cell">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="64" height="64" rx="14" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="44" rx="6" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="13" rx="6" fill="#FB7185"/>
+                    <rect x="10" y="19" width="44" height="4" fill="#FB7185"/>
+                    <circle cx="22" cy="34" r="4" fill="#FFFBEB"/>
+                    <circle cx="32" cy="34" r="4" fill="#FB7185"/>
+                    <circle cx="42" cy="34" r="4" fill="#FFFBEB"/>
+                    <circle cx="22" cy="46" r="4" fill="#FB7185"/>
+                    <circle cx="32" cy="46" r="4" fill="#FFFBEB"/>
+                    <circle cx="42" cy="46" r="4" fill="#FFFBEB" fill-opacity="0.5"/>
+                </svg>
+                <span>ROTAKEEP</span>
+            </div>
+
+            <!-- 2. SAFETYKEEP — Shield with checkmark -->
+            <div class="icon-cell">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="64" height="64" rx="14" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="44" rx="6" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="13" rx="6" fill="#FB7185"/>
+                    <rect x="10" y="19" width="44" height="4" fill="#FB7185"/>
+                    <path d="M32 26 L21 31 V41 Q21 50 32 52 Q43 50 43 41 V31 Z" fill="#FFFBEB"/>
+                    <polyline points="26,39 30,44 38,34" stroke="#FB7185" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>SAFETYKEEP</span>
+            </div>
+
+            <!-- 3. TABLEKEEP — Floor plan grid of table squares -->
+            <div class="icon-cell">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="64" height="64" rx="14" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="44" rx="6" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="13" rx="6" fill="#FB7185"/>
+                    <rect x="10" y="19" width="44" height="4" fill="#FB7185"/>
+                    <rect x="18" y="30" width="8" height="8" rx="2" fill="#FFFBEB"/>
+                    <rect x="28" y="30" width="8" height="8" rx="2" fill="#FB7185"/>
+                    <rect x="38" y="30" width="8" height="8" rx="2" fill="#FFFBEB"/>
+                    <rect x="18" y="42" width="8" height="8" rx="2" fill="#C49070"/>
+                    <rect x="28" y="42" width="8" height="8" rx="2" fill="#FFFBEB"/>
+                    <rect x="38" y="42" width="8" height="8" rx="2" fill="#FFFBEB" fill-opacity="0.5"/>
+                </svg>
+                <span>TABLEKEEP</span>
+            </div>
+
+            <!-- 4. EPOSKEEP — Receipt with line items -->
+            <div class="icon-cell">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="64" height="64" rx="14" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="44" rx="6" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="13" rx="6" fill="#FB7185"/>
+                    <rect x="10" y="19" width="44" height="4" fill="#FB7185"/>
+                    <rect x="20" y="26" width="24" height="28" rx="3" fill="#FFFBEB"/>
+                    <rect x="24" y="31" width="16" height="2.5" rx="1.25" fill="#C49070"/>
+                    <rect x="24" y="36" width="10" height="2.5" rx="1.25" fill="#C49070"/>
+                    <rect x="24" y="41.5" width="16" height="3" rx="1.5" fill="#FB7185"/>
+                    <rect x="24" y="47" width="12" height="2.5" rx="1.25" fill="#C49070" fill-opacity="0.5"/>
+                </svg>
+                <span>EPOSKEEP</span>
+            </div>
+
+            <!-- 5. STOCKKEEP — Inventory bars with status dots -->
+            <div class="icon-cell">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="64" height="64" rx="14" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="44" rx="6" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="13" rx="6" fill="#FB7185"/>
+                    <rect x="10" y="19" width="44" height="4" fill="#FB7185"/>
+                    <rect x="16" y="28" width="32" height="6" rx="3" fill="#FFFBEB"/>
+                    <circle cx="21" cy="31" r="2" fill="#FB7185"/>
+                    <rect x="16" y="37" width="32" height="6" rx="3" fill="#C49070"/>
+                    <circle cx="21" cy="40" r="2" fill="#FFFBEB"/>
+                    <rect x="16" y="46" width="32" height="6" rx="3" fill="#FFFBEB" fill-opacity="0.5"/>
+                    <circle cx="21" cy="49" r="2" fill="#C49070"/>
+                </svg>
+                <span>STOCKKEEP</span>
+            </div>
+
+            <!-- 6. PEOPLEKEEP — Three person silhouettes -->
+            <div class="icon-cell">
+                <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="64" height="64" rx="14" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="44" rx="6" fill="#78350F"/>
+                    <rect x="10" y="10" width="44" height="13" rx="6" fill="#FB7185"/>
+                    <rect x="10" y="19" width="44" height="4" fill="#FB7185"/>
+                    <!-- Left person (back) -->
+                    <circle cx="21" cy="33" r="4" fill="#FFFBEB"/>
+                    <rect x="16" y="39" width="10" height="10" rx="5" fill="#FFFBEB"/>
+                    <!-- Right person (back) -->
+                    <circle cx="43" cy="33" r="4" fill="#C49070"/>
+                    <rect x="38" y="39" width="10" height="10" rx="5" fill="#C49070"/>
+                    <!-- Centre person (front) -->
+                    <circle cx="32" cy="30" r="5" fill="#FB7185"/>
+                    <rect x="26" y="37" width="12" height="12" rx="6" fill="#FB7185"/>
+                </svg>
+                <span>PEOPLEKEEP</span>
+            </div>
+
         </div>
     </section>
 
